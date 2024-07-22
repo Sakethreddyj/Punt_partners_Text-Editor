@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Text Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Font Family, Weight, and Italic Toggle -->
+        <div class="controls">
+            <label for="font-family">Font Family:</label>
+            <select id="font-family"></select>
+
+            <label for="font-weight">Variant:</label>
+            <select id="font-weight"></select>
+
+            <div class="toggle-switch">
+                <input type="checkbox" id="italic">
+                <label for="italic"></label>Italic
+            </div>
+        </div>
+
+        <!-- Text Area -->
+        <textarea id="text-editor" rows="10" cols="50" placeholder="Enter text here..."></textarea>
+
+        <!-- Save and Reset Buttons -->
+        <div class="buttons">
+            <button id="save">Save</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
